@@ -6,9 +6,8 @@ import hashlib
 def add(x, y):
     return x + y
 
-
+# Funcion para generar un valor SHA-256 hash aleatorio (un valor hexadecimal) 
 def random_hash():
-    # Genera un valor aleatorio SHA-256 hash (un valor hexadecimal)
     random_value = str(random.random())
     return hashlib.sha256(random_value.encode()).hexdigest()
 
